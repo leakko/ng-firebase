@@ -1,5 +1,13 @@
-<mat-toolbar color="primary">
-  <mat-icon>local_fire_department</mat-icon>
-  <span>Kanban Fire</span>
+<mat-toolbar color="primary" class="toolbar">
+  <div class="toolbar-content">
+    <div>
+      <mat-icon>face</mat-icon>
+      <span class="name">Marcos Salvo's Page</span>
+    </div>
+    <div>
+      <a mat-button routerLink="/"> Home</a>
+      <a mat-button routerLink="/portfolio"> Potfolio</a>
+    </div>
+  </div>
 </mat-toolbar>
 <router-outlet></router-outlet>

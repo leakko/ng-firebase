@@ -6,10 +6,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

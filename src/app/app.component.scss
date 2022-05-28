@@ -1,0 +1,31 @@
+.name {
+    margin-left: 25px;
+}
+
+.toolbar {
+    display: block;
+
+    .toolbar-content {
+        max-width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div:first-child{
+            display: flex;
+            align-items: center;
+        }
+
+        div:nth-child(2){
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                margin: 0 25px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
