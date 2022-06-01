@@ -5,13 +5,13 @@
       [opened]="(isHandset$ | async) === false"
       [ngClass]="{hidden: !(isHandset$ | async)}"
       >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar id="small-toolbar">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/">Home</a>
-      <a mat-list-item routerLink="/portfolio">Portfolio</a>
+      <a mat-list-item routerLink="/" routerLinkActive="secondary-active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a mat-list-item routerLink="/skills" routerLinkActive="secondary-active-link">Skills</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class="content">
     <mat-toolbar color="primary" id="big-toolbar">
       <div>
         <button
@@ -27,8 +27,8 @@
           <span class="lobster-font">Marcos Salvo's Site</span>
         </div>
         <div [ngClass]="{hidden: (isHandset$ | async)}">
-          <a mat-list-item routerLink="/">Home</a>
-          <a mat-list-item routerLink="/portfolio">Portfolio</a>
+          <a mat-list-item routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          <a mat-list-item routerLink="/skills" routerLinkActive="active-link">Skills</a>
         </div>
       </div>
     </mat-toolbar>
