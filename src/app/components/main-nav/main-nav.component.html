@@ -7,8 +7,16 @@
       >
     <mat-toolbar id="small-toolbar">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/" routerLinkActive="secondary-active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-      <a mat-list-item routerLink="/skills" routerLinkActive="secondary-active-link">Skills</a>
+      <a mat-list-item routerLink="/" 
+      routerLinkActive="secondary-active-link" 
+      [routerLinkActiveOptions]="{ exact: true }" (click)="closeSidenav()">
+        Home
+      </a>
+      <a mat-list-item routerLink="/skills" 
+      routerLinkActive="secondary-active-link"(click)="closeSidenav()"
+      >
+        Skills
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
