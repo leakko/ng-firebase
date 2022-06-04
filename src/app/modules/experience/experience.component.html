@@ -1,5 +1,8 @@
 <div class="experience-container">
     <div class="experience">
-        I've worked in these places
+        <div class="cards-container">
+            <app-experience-card class="card" *ngFor="let _ of [].constructor(7)"></app-experience-card>
+            <div class="card" *ngFor="let _ of [].constructor(5)"></div>
+        </div>   
     </div>
 </div>
