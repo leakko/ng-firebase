@@ -1,3 +1,4 @@
+@use '../../../assets/styles/colors' as colors;
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .lobster-font {
@@ -28,6 +29,8 @@
 
 #big-toolbar {
   display: block;
+  background-color: colors.$primary;
+  color: white;
 
   & > div {
     height: 100%;
